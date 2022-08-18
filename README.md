@@ -1,2 +1,2 @@
 # doodledog
-Generative ART
+Generative ART project of Al-Kutla
