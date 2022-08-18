@@ -1,13 +1,13 @@
 {
-  "name": "art_generator",
+  "name": "doodledog",
   "version": "1.0.0",
-  "description": "",
+  "description": "Generative Art by Al-Kutla",
   "main": "index.js",
   "scripts": {
     "build": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Daniel Eugene Botha",
+  "author": "aloshy.eth",
   "license": "ISC",
   "dependencies": {
     "canvas": "^2.8.0"

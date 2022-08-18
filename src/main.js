@@ -71,7 +71,7 @@ const layersSetup = layersOrder => {
 
 const buildSetup = () => {
   if (fs.existsSync(buildDir)) {
-    fs.rmdirSync(buildDir, { recursive: true });
+    fs.rmSync(buildDir, { recursive: true });
   }
   fs.mkdirSync(buildDir);
 };
@@ -159,7 +159,7 @@ const createMetaData = () => {
     if(err == null || err.code === 'ENOENT') {
       fs.writeFileSync(`${buildDir}/${metDataFile}`, JSON.stringify(metadata, null, 2));
     } else {
-        console.log('Oh no, error: ', err.code);
+        console.error('Error: ', err.code);
     }
   });
 };
